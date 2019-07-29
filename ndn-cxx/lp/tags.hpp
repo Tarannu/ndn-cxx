@@ -26,6 +26,7 @@
 #include "ndn-cxx/lp/empty-value.hpp"
 #include "ndn-cxx/lp/prefix-announcement-header.hpp"
 #include "ndn-cxx/tag.hpp"
+#include "geo-tag.hpp"
 
 namespace ndn {
 namespace lp {
@@ -71,13 +72,12 @@ typedef SimpleTag<EmptyValue, 14> NonDiscoveryTag;
  *  This tag can be attached to Data.
  */
 typedef SimpleTag<PrefixAnnouncementHeader, 15> PrefixAnnouncementTag;
-
-/** \class HopCountTag
- *  \brief a packet tag for HopCount field
+/** \class Geo-tag
+ *  \brief a packet tag for Geotag field
  *
- * This tag can be attached to Interest, Data, Nack.
+ *  This tag can be attached to Data.
  */
-typedef SimpleTag<uint64_t, 0x60000000> HopCountTag;
+typedef SimpleTag<GeoTag, 0x60000001> GeoCordTag;
 
 } // namespace lp
 } // namespace ndn
