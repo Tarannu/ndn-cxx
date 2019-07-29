@@ -71,35 +71,22 @@ Sequence = 81,
 FragIndex = 82,
 
 FragCount = 83,
-
+HopCountTag = 84,
 Nack = 800,
-
 NackReason = 801,
-
 NextHopFaceId = 816,
-
 IncomingFaceId = 817,
-
 CachePolicy = 820,
-
 CachePolicyType = 821,
-
 CongestionMark = 832,
-
 Ack = 836,
 GeoTag = 85,
-
 GeoTagPos = 86,
-
 TxSequence = 840,
-
 NonDiscovery = 844,
-
 PrefixAnnouncement = 848,
 
 };
-
-
 
 enum {
 

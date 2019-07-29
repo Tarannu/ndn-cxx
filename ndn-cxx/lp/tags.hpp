@@ -77,6 +77,12 @@ typedef SimpleTag<PrefixAnnouncementHeader, 15> PrefixAnnouncementTag;
  *
  *  This tag can be attached to Data.
  */
+/** \class HopCountTag
+ *  \brief a packet tag for HopCount field
+ *
+ * This tag can be attached to Interest, Data, Nack.
+ */
+typedef SimpleTag<uint64_t, 0x60000000> HopCountTag;
 typedef SimpleTag<GeoTag, 0x60000001> GeoCordTag;
 
 } // namespace lp
